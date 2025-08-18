@@ -1,9 +1,17 @@
+import { useState } from "react";
+
 const Counter = () => {
 
-    let counter = 0;
+    // use of useState
+
+      const [counter, setCounter] = useState(100)
+
+
+
+    
 
     const increase = () =>{
-        counter++;
+        setCounter++;
         console.log("Counter ", counter)
     }
 
@@ -13,10 +21,13 @@ const Counter = () => {
     }
 
 
+     
+
+
     return (
 
         <div>
-            <h3>Counter</h3>
+            <h3>Counter : {counter}</h3>
             <button onClick={increase}>Increase</button>
             <button onClick={decrease}>Decrease</button>
         </div>
