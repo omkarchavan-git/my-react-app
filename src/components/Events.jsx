@@ -12,12 +12,13 @@ const Events = () => {
         alert(a + 10)
     }
 
+    
     return (
         <div>
             <h1>use state </h1>
 
             {/* calling normal function */}
-            <button onClick={alertButton}> click </button>
+            <button onClick={alertButton} style={{margin:"5px"}}> click </button>
 
             {/* calling call back function */}
             <button onClick={() => callBack(10)}> call back function </button>
@@ -25,6 +26,8 @@ const Events = () => {
         </div>
     )
 }
+
+
 
 
 
