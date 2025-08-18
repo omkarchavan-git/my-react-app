@@ -1,8 +1,10 @@
- #container {
+body, #root {
+  display: flex;
+  justify-content: center;   /* Horizontal center */
+  align-items: flex-start;    /* Align to top  */
+  /* min-height: 100vh;         Full screen */
+}
 
-   display: flex;
-  
-
-   border: 1px solid wheat;
-
- }
+#container {
+  margin-top: 20px;          /* Small gap from top */
+}
