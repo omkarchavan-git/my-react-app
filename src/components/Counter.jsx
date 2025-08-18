@@ -11,12 +11,12 @@ const Counter = () => {
     
 
     const increase = () =>{
-        setCounter++;
+        setCounter(counter+1);
         console.log("Counter ", counter)
     }
 
     const decrease = () =>{
-        counter--;
+       setCounter(counter-1)
         console.log("cpunter ", counter)
     }
 
