@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Events from './components/Events'
 import Counter from './components/Counter'
+import Events from './components/Events'
+import Loops  from './components/Loops'
+import UseEffects from './components/UseEffects'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +20,8 @@ function App() {
         </div>
         <Events />
         <Counter />
+         {/* <Loops /> */}
+        <UseEffects />
       </div>
     </>
   )

@@ -15,7 +15,7 @@ const Counter = () => {
        setCounter(counter-1)
         console.log("cpunter ", counter)
     }
-
+ 
     return (
 
         <div>
