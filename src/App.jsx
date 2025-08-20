@@ -4,6 +4,7 @@ import Counter from './components/Counter'
 import Events from './components/Events'
 import Loops  from './components/Loops'
 import UseEffects from './components/UseEffects'
+import FormHandel from './components/FormHandel'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,10 +19,12 @@ function App() {
 
 
         </div>
-        <Events />
+        {/* <Events />
         <Counter />
-         {/* <Loops /> */}
-        <UseEffects />
+          <Loops />  
+        <UseEffects /> */}
+
+        <FormHandel />
       </div>
     </>
   )

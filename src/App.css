@@ -1,8 +1,9 @@
 body, #root {
   display: flex;
-  justify-content: center;   /* Horizontal center */
-  align-items: flex-start;    /* Align to top  */
+  justify-content: flex-start;   /* Horizontal center */
+   align-items: flex-start;   /* Align to top  */
   /* min-height: 100vh;         Full screen */
+  margin: 10px;
 }
 
 #container {
