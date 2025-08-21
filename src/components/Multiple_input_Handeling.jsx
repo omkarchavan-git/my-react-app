@@ -1,6 +1,7 @@
 import React from 'react'
+import { useState } from 'react'
 
-function Multiple_input_Handeling() {
+const  Multiple_input_Handeling = () => {
 
 
     const [fromData, setFromData] = useState({
@@ -16,10 +17,16 @@ function Multiple_input_Handeling() {
         setFromData({...fromData, [name] : value})
     }
 
+    const submitHandler = (e) => {
+        e.preventDefault();
+        alert("Yor data submitted")
+        console.log(fromData)
+    }
+
     return (
         <div>
             <h3>  Multiple input handeling </h3>
-            <form action="">
+            <form  onSubmit={submitHandler}>
 
                 <div>
                     Name :- <input value={fromData.name} onChange={onChange} type="text" name='name' />
@@ -33,7 +40,7 @@ function Multiple_input_Handeling() {
                 <div>
                     City :- <input value={fromData.city} onChange={onChange} type="text" name='city' />
                 </div>
-                <button type="button" name="" id="" className="m2" style={{ margin: '10px' }}> Submit </button>
+                <button type="submit"  style={{ margin: '10px' }}> Submit </button>
             </form>
         </div>
     )
