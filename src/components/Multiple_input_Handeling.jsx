@@ -1,6 +1,7 @@
 import React from 'react'
+import { useState } from 'react'
 
-function Multiple_input_Handeling() {
+const Multiple_input_Handeling = () => {
 
 
     const [fromData, setFromData] = useState({
@@ -12,20 +13,35 @@ function Multiple_input_Handeling() {
     })
 
     const onChange = (e) => {
-        const{name, value} = e.target
-        setFromData({...fromData, [name] : value})
+        const { name, value } = e.target
+        setFromData({ ...fromData, [name]: value })
+    }
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+        alert("Yor data submitted")
+        console.log(fromData)
+
+        // to reset the input fields after submit 
+        setFromData({
+            name: '',
+            email: '',
+            pass: '',
+            city: ''
+
+        })
     }
 
     return (
         <div>
             <h3>  Multiple input handeling </h3>
-            <form action="">
+            <form onSubmit={submitHandler}>
 
                 <div>
                     Name :- <input value={fromData.name} onChange={onChange} type="text" name='name' />
                 </div>
                 <div>
-                    Email :- < input value={fromData.email}  onChange={onChange} type="text" name='email' />
+                    Email :- < input value={fromData.email} onChange={onChange} type="text" name='email' />
                 </div>
                 <div>
                     Pass :- <input value={fromData.pass} onChange={onChange} type="password" name='pass' />
@@ -33,7 +49,7 @@ function Multiple_input_Handeling() {
                 <div>
                     City :- <input value={fromData.city} onChange={onChange} type="text" name='city' />
                 </div>
-                <button type="button" name="" id="" className="m2" style={{ margin: '10px' }}> Submit </button>
+                <button type="submit" style={{ margin: '10px' }}> Submit </button>
             </form>
         </div>
     )
