@@ -2,10 +2,14 @@ import { useState } from 'react'
 import './App.css'
 import Counter from './components/Counter'
 import Events from './components/Events'
-import Loops  from './components/Loops'
+import Loops from './components/Loops'
 import UseEffects from './components/UseEffects'
 import FormHandel from './components/FormHandel'
 import Multiple_input_Handeling from './components/Multiple_input_Handeling'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,18 +20,22 @@ function App() {
 
         <div className='mess'>
 
-          <h2>Root</h2>
-
-
         </div>
         {/* <Events />
         <Counter />
           <Loops />  
-        <UseEffects /> */}
+        <UseEffects /> 
+         <FormHandel /> 
+        <Multiple_input_Handeling /> */}
 
-        {/* <FormHandel /> */}
+          <Router>
+            <Routes>
+              <Route path='/' element = {<Home />}  /> 
+              <Route path='/about' element = {<About />}  /> 
+              
+            </Routes>
+          </Router>
 
-        <Multiple_input_Handeling/>
       </div>
     </>
   )
