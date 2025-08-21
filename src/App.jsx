@@ -5,6 +5,7 @@ import Events from './components/Events'
 import Loops  from './components/Loops'
 import UseEffects from './components/UseEffects'
 import FormHandel from './components/FormHandel'
+import Multiple_input_Handeling from './components/Multiple_input_Handeling'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +25,9 @@ function App() {
           <Loops />  
         <UseEffects /> */}
 
-        <FormHandel />
+        {/* <FormHandel /> */}
+
+        <Multiple_input_Handeling/>
       </div>
     </>
   )
