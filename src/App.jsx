@@ -36,9 +36,10 @@ function App() {
               <Route path='/about' element = {<About />}  /> 
               <Route path='/cources' element = {<Dynamic_Routing />}  /> 
               <Route path='/cources/:id' element = {<Course_details />}  /> 
-              
             </Routes>
           </Router>
+
+
 
       </div>
     </>
