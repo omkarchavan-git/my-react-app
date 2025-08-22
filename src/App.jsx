@@ -12,6 +12,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Dynamic_Routing from './pages/Dynamic_Routing'
 import Course_details from './pages/Course_details'
+import Navbar from './components/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,11 +32,13 @@ function App() {
         <Multiple_input_Handeling /> */}
 
           <Router>
+            <Navbar />
             <Routes>
               <Route path='/' element = {<Home />}  /> 
               <Route path='/about' element = {<About />}  /> 
               <Route path='/cources' element = {<Dynamic_Routing />}  /> 
               <Route path='/cources/:id' element = {<Course_details />}  /> 
+             
             </Routes>
           </Router>
 

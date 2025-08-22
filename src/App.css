@@ -6,6 +6,10 @@ body, #root {
   margin: 10px;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 #container {
   margin-top: 20px;          /* Small gap from top */
 }
