@@ -1,13 +1,13 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 const Course_details = () => {
 
       const arr = [
-        { id: 1, course_name: "java", price: 1234 },
-        { id: 2, course_name: "Python", price: 1435 },
-        { id: 3, course_name: "MERN", price: 12004 },
-        { id: 4, course_name: "AI-ML", price: 12344 },
+        { id: 1, course_name: "java", price: 12099 },
+        { id: 2, course_name: "Python", price: 1499 },
+        { id: 3, course_name: "MERN", price: 12999 },
+        { id: 4, course_name: "AI-ML", price: 14999 },
         { id: 5, course_name: "HTML", price: 9999 }
 
     ]
@@ -22,7 +22,10 @@ const Course_details = () => {
             <div>
 
                 <h3>Course id : {id} </h3>
+                <h3>Course name : {course_details[0].course_name} </h3>
+                <h3>Course price : {course_details[0].price} </h3>
             </div>
+            <button type="button"> <Link to={'/cources'}>All Cources</Link> </button>
         </>
     )
 }
