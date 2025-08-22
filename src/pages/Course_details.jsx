@@ -25,11 +25,14 @@ const Course_details = () => {
 
                 <h3>Course id : {id} </h3>
                 <h3>Course name : {course_details[0].course_name} </h3>
-                {location.pathname != "/cources/1" && (
+
+                {location.pathname != "/cources/1" && (               /*  if the condition URL matches then it will not show these details  */
                     <>
                         <h3>Course price : {course_details[0].price} </h3>
                     </>
                 )}
+
+
             </div>
             <button type="button"> <Link to={'/cources'}>All Cources</Link> </button>
         </>
