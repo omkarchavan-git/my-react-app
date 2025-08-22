@@ -34,8 +34,8 @@ function App() {
             <Routes>
               <Route path='/' element = {<Home />}  /> 
               <Route path='/about' element = {<About />}  /> 
-              <Route path='/courses' element = {<Dynamic_Routing />}  /> 
-              <Route path='/courses/:id' element = {<Course_details />}  /> 
+              <Route path='/cources' element = {<Dynamic_Routing />}  /> 
+              <Route path='/cources/:id' element = {<Course_details />}  /> 
               
             </Routes>
           </Router>
