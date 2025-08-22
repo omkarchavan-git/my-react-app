@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
 
 
@@ -13,8 +13,7 @@ function Dynamic_Routing() {
         { id: 5, course_name: "HTML", price: 9999 }
 
     ]
-
-
+ 
     return (
         <div>
             <h2>React Routing</h2>
