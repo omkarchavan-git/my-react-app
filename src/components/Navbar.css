@@ -1,0 +1,16 @@
+.navbar_container{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: aquamarine;
+    margin: 5px;
+    padding: 10px;
+}
+
+.nav, a{
+    
+    padding: 10px;
+    margin-left: 10px;
+}
+
+ 
