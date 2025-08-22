@@ -31,8 +31,6 @@ const Course_details = () => {
                         <h3>Course price : {course_details[0].price} </h3>
                     </>
                 )}
-
-
             </div>
             <button type="button"> <Link to={'/cources'}>All Cources</Link> </button>
         </>
